@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sailwyn | Amazon Advertising and Business Intelligence</title>
+    <meta name="description" content="Sailwyn helps Amazon sellers connect advertising, sales, inventory, and profitability data in one operational dashboard.">
+    <link rel="canonical" href="https://sailwyn.com/">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Sailwyn home">
+        <img class="brand-icon" src="assets/sailwyn-logo.svg" alt="" aria-hidden="true">
+        <span>Sailwyn</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#platform">Platform</a>
+        <a href="#security">Security</a>
+        <a href="#authorization">Authorization</a>
+        <a href="privacy.html">Privacy</a>
+        <a class="nav-button" href="mailto:hello@sailwyn.com">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Amazon seller operations platform</p>
+          <h1>Advertising, sales, inventory, and profitability data in one clear workspace.</h1>
+          <p class="hero-copy">
+            Sailwyn helps Amazon sellers understand what is driving growth, margin, and wasted ad spend without copying API credentials or building internal reporting tools.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="mailto:hello@sailwyn.com">Request access</a>
+            <a class="secondary-button" href="#authorization">How authorization works</a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="Platform snapshot">
+          <div class="hero-logo-card">
+            <img src="assets/sailwyn-logo.svg" alt="Sailwyn logo">
+          </div>
+          <div class="panel-header">
+            <span>Account health</span>
+            <strong>Connected</strong>
+          </div>
+          <div class="metric-grid">
+            <div>
+              <span>Ad sales</span>
+              <strong>$128.4k</strong>
+              <small>Last 30 days</small>
+            </div>
+            <div>
+              <span>ACOS</span>
+              <strong>21.8%</strong>
+              <small>Down 3.4 pts</small>
+            </div>
+            <div>
+              <span>Contribution margin</span>
+              <strong>31.2%</strong>
+              <small>After ads</small>
+            </div>
+            <div>
+              <span>Budget risk</span>
+              <strong>4 campaigns</strong>
+              <small>Needs review</small>
+            </div>
+          </div>
+          <div class="signal-list">
+            <span>Sponsored Products spend is pacing above target.</span>
+            <span>Two ASINs are gaining ranking while margin remains positive.</span>
+            <span>Inventory coverage is below threshold for one top seller.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="platform">
+        <div class="section-heading">
+          <p class="eyebrow">Platform</p>
+          <h2>Built for repeat Amazon operating work.</h2>
+          <p>Sailwyn connects the day-to-day metrics sellers need to manage ads, product economics, and inventory decisions.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Advertising performance</h3>
+            <p>Track campaign, keyword, target, placement, search term, and product-level performance across Amazon Ads profiles.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Profitability analysis</h3>
+            <p>Combine sales, fees, settlement data, product cost, shipping cost, and advertising spend into margin-focused reporting.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Inventory context</h3>
+            <p>Review FBA stock, inbound units, listing status, and product-level constraints before increasing spend.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Controlled automation</h3>
+            <p>Budget and bid optimization runs only with explicit seller approval, configurable rules, and a full audit log of every change.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="band" id="authorization">
+        <div class="band-content">
+          <div>
+            <p class="eyebrow">Amazon authorization</p>
+            <h2>Sellers stay in control of their data access.</h2>
+          </div>
+          <div class="steps">
+            <div>
+              <span>1</span>
+              <p>Connect Amazon store data through Selling Partner API authorization.</p>
+            </div>
+            <div>
+              <span>2</span>
+              <p>Connect Amazon Ads data through Login with Amazon authorization.</p>
+            </div>
+            <div>
+              <span>3</span>
+              <p>Review connected marketplaces, advertising profiles, sync status, and access health.</p>
+            </div>
+          </div>
+          <p class="note">
+            Sellers do not share Amazon passwords, client secrets, or API credentials with Sailwyn. Authorization can be revoked through Amazon or by contacting our support team.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="security">
+        <div class="section-heading">
+          <p class="eyebrow">Security</p>
+          <h2>Designed around least-privilege access.</h2>
+          <p>Our first release focuses on non-PII business, advertising, inventory, listing, and financial reporting data. Write actions are limited to advertising budget and bid updates and sending Amazon's standard review requests for eligible orders — each requires explicit seller approval and is fully audit-logged. Buyer names, phone numbers, addresses, shipping labels, and tax invoice data are not part of the product scope.</p>
+        </div>
+        <div class="security-list">
+          <div>
+            <h3>Token protection</h3>
+            <p>Authorization tokens are stored encrypted and are never shown in the user interface, reports, or logs.</p>
+          </div>
+          <div>
+            <h3>Tenant separation</h3>
+            <p>Seller accounts, advertising profiles, sync jobs, reports, and operational logs are separated by account.</p>
+          </div>
+          <div>
+            <h3>Auditability</h3>
+            <p>Account access, authorization changes, sync activity, and every budget or bid change are logged with account, timestamp, actor, and result details.</p>
+          </div>
+          <div>
+            <h3>Data use limitation</h3>
+            <p>Data from an authorized Amazon account is used only to provide the service to that account. It is never sold, shared with other customers, or used for any unrelated business purpose.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-strip">
+        <div>
+          <h2>For seller onboarding, compliance, or partnership questions</h2>
+          <p>Sailwyn is built and operated by OneCommerce Inc.<br>540 W 28th St, Apt 3J, New York, NY 10001, United States</p>
+        </div>
+        <a class="primary-button" href="mailto:hello@sailwyn.com">hello@sailwyn.com</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>&copy; 2026 OneCommerce Inc. All rights reserved. Sailwyn is a product of OneCommerce Inc.</span>
+      <div>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+        <a href="data-deletion.html">Data Deletion</a>
+      </div>
+    </footer>
+  </body>
+</html>
