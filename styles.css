@@ -719,15 +719,17 @@ h3 {
 }
 
 .fineprint li {
-  display: grid;
-  grid-template-columns: 16px 1fr;
-  gap: 10px;
+  position: relative;
+  padding-left: 26px;
   color: var(--muted);
   font-size: 15px;
 }
 
 .fineprint li::before {
   content: "\2014";
+  position: absolute;
+  top: 0;
+  left: 0;
   color: #a9bcd8;
 }
 
