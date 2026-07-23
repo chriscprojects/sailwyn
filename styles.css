@@ -558,44 +558,6 @@ h3 {
 
 .plan-button {
   width: 100%;
-  cursor: pointer;
-  font-family: inherit;
-}
-
-.trial-dialog {
-  width: min(92vw, 460px);
-  padding: 0;
-  border: 1px solid var(--line);
-  color: var(--ink);
-  background: var(--paper);
-  box-shadow: 0 24px 72px rgba(7, 26, 70, 0.24);
-}
-
-.trial-dialog::backdrop {
-  background: rgba(7, 26, 70, 0.48);
-}
-
-.trial-dialog-content {
-  padding: 32px;
-}
-
-.trial-dialog-content h2 {
-  margin-bottom: 12px;
-}
-
-.trial-dialog-content > p:not(.eyebrow) {
-  margin-bottom: 24px;
-  color: var(--muted);
-}
-
-.trial-dialog-content form {
-  margin: 0;
-}
-
-.trial-dialog-close {
-  width: 100%;
-  cursor: pointer;
-  font-family: inherit;
 }
 
 .plan-specs {

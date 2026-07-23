@@ -44,7 +44,7 @@
               <span class="currency">$</span><span class="amount">20</span><span class="period">/month</span>
             </p>
             <p class="plan-desc">One connected Amazon account, one person, a focused catalog.</p>
-            <button class="secondary-button plan-button" type="button" data-free-trial-dialog>Start free trial</button>
+            <a class="secondary-button plan-button" href="mailto:chris.c@sailwyn.com?subject=Sailwyn%20Starter%20Free%20Trial%20Request">Request a free trial</a>
             <ul class="plan-specs">
               <li><span>Connected accounts</span><strong>1</strong></li>
               <li><span>Team users</span><strong>1</strong></li>
@@ -61,7 +61,7 @@
               <span class="currency">$</span><span class="amount">50</span><span class="period">/month</span>
             </p>
             <p class="plan-desc">Three connected Amazon accounts and a team that shares the work.</p>
-            <button class="primary-button plan-button" type="button" data-free-trial-dialog>Start free trial</button>
+            <a class="primary-button plan-button" href="mailto:chris.c@sailwyn.com?subject=Sailwyn%20Growth%20Free%20Trial%20Request">Request a free trial</a>
             <ul class="plan-specs">
               <li><span>Connected accounts</span><strong>3</strong></li>
               <li><span>Team users</span><strong>3</strong></li>
@@ -77,7 +77,7 @@
               <span class="currency">$</span><span class="amount">90</span><span class="period">/month</span>
             </p>
             <p class="plan-desc">A larger team, a large catalog, and higher operating limits.</p>
-            <button class="secondary-button plan-button" type="button" data-free-trial-dialog>Start free trial</button>
+            <a class="secondary-button plan-button" href="mailto:chris.c@sailwyn.com?subject=Sailwyn%20Scale%20Free%20Trial%20Request">Request a free trial</a>
             <ul class="plan-specs">
               <li><span>Connected accounts</span><strong>10</strong></li>
               <li><span>Team users</span><strong>10</strong></li>
@@ -217,17 +217,6 @@
       </section>
     </main>
 
-    <dialog class="trial-dialog" id="trial-dialog" aria-labelledby="trial-dialog-title" aria-describedby="trial-dialog-description">
-      <div class="trial-dialog-content">
-        <p class="eyebrow">Free trial</p>
-        <h2 id="trial-dialog-title">Coming soon</h2>
-        <p id="trial-dialog-description">Free trial signup is currently under development.</p>
-        <form method="dialog">
-          <button class="primary-button trial-dialog-close" type="submit">Got it</button>
-        </form>
-      </div>
-    </dialog>
-
     <footer class="footer">
       <span>&copy; 2026 OneCommerce Inc. All rights reserved. Sailwyn is a product of OneCommerce Inc.</span>
       <div>
@@ -237,25 +226,5 @@
       </div>
     </footer>
 
-    <script>
-      const trialDialog = document.querySelector("#trial-dialog");
-
-      document.querySelectorAll("[data-free-trial-dialog]").forEach((button) => {
-        button.addEventListener("click", () => trialDialog.showModal());
-      });
-
-      trialDialog.addEventListener("click", (event) => {
-        if (event.target === trialDialog) {
-          trialDialog.close();
-        }
-      });
-
-      trialDialog.addEventListener("keydown", (event) => {
-        if (event.key === "Escape") {
-          event.preventDefault();
-          trialDialog.close();
-        }
-      });
-    </script>
   </body>
 </html>
